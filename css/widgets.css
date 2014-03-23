@@ -1,0 +1,516 @@
+/**
+ * ImpressPages CMS theme: Scrolling
+ *
+ * Styles file for widgets, system modules and content.
+ *
+ * @package ImpressPages
+ */
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+.ipBlock{
+    border-top: #1d2d48 solid 8px;
+    font-family: Georgia, serif;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.ipWidget h1{
+    color: #1d2d48;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight:800;
+    line-height: 100%;
+    margin: 26px 0px 5px 0px;
+    text-align: center;
+    text-transform:uppercase;
+}
+
+.ipWidget h2{
+    color: #1d2d48;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight:100;
+    text-align: center;
+    line-height: 100%;
+}
+
+.ipWidget {
+    margin: 0;
+    zoom: 1;
+    margin-bottom: 25px;
+}
+
+.ipPreviewWidget h1, .ipPreviewWidget h2, .ipPreviewWidget h3 {
+    font-family: 'Open Sans', serif;
+}
+
+.ipPreviewWidget h1{
+    margin-top: 35px;
+}
+
+.ipPreviewWidget h2, .ipPreviewWidget h3 {
+    font-family: Georgia, serif;   
+    margin: 0px;
+}
+
+.ipPreviewWidget h1 {
+    color: #29426C;
+    font-size: 38px;
+    margin-top: 20px
+}
+
+.ipPreviewWidget h2 {
+    color: #29426C;
+    font-size: 36px;
+}
+
+.ipPreviewWidget h3 {
+    color: #29426C;
+    font-size: 22px;
+}
+
+.ipPreviewWidget ul {
+    list-style-position: inside;
+    list-style: square;
+}
+
+
+.ipPreviewWidget a {
+    color: #019bd4;
+}
+
+.ipPreviewWidget a:hover {
+    text-decoration: underline;
+}
+
+.ipPreviewWidget .caption {
+    color: #333;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.ipPreviewWidget .signature {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.ipPreviewWidget .note {
+    color: #333;
+    display: block;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 30px 25px;
+}
+
+.ipPreviewWidget table {
+    border-collapse: collapse;
+    color: #000;
+    font-size: 11px;
+    width: 100%;
+}
+
+.ipPreviewWidget table p {
+    line-height: auto;
+    margin: 0;
+}
+
+.ipPreviewWidget td {
+    border-bottom: 1px solid #b2b2b2;
+    font-size: 11px;
+    padding: 9px;
+}
+
+.ipPreviewWidget th, .ipPreviewWidget thead td, .ipPreviewWidget tbody tr:first-child td {
+    background-color: #000;
+    border: none;
+    color: #fff;
+}
+
+.ipPreviewWidget thead+tbody tr:first-child td {
+    border-bottom: 1px solid #b2b2b2;
+    color: inherit;
+    font-size: 12px;
+}
+
+.ipModuleForm {
+    border: 1px solid #888;
+    padding: 20px 25px;
+}
+
+.ipModuleForm .ipmControlInput {
+    background-color: #f2f2f2;
+    border: 1px solid #a7a7a7;
+    height: 21px;
+    padding: 1px 2px;
+}
+
+.ipModuleForm .ipmControlInput:focus {
+    border-color: #000;
+}
+
+.ipModuleForm .ipmControlTextarea {
+    background-color: #f2f2f2;
+    border: 1px solid #a7a7a7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    height: 9.5em;
+    padding: 1px 2px;
+    overflow: auto;
+    width: 100%;
+}
+
+.ipModuleForm .ipmControlTextarea:focus {
+    border-color: #000;
+}
+
+.ipModuleForm .ipmControlSelect {
+    background-color: #f2f2f2;
+    border: 1px solid #a7a7a7;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 25px;
+    padding: 2px;
+    width: 100%;
+}
+
+.ipModuleForm .ipmType-confirm .ipmControlCheckbox {
+    float: left;
+}
+
+.ipModuleForm .ipmControlConfirmOptions {
+    margin-left: 25px;
+}
+
+.ipModuleForm .ipmType-captcha .ipmControl img {
+    max-width: 100%;
+}
+
+.ipModuleForm .ipmNote {
+    color: #656565;
+    font-size: 11px;
+}
+
+.ipModuleForm .ipmHint {
+    background-color: #a7a7a7;
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    padding: 4px 10px 2px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.ipModuleForm .ipmControlSubmit {
+  background: #019bd4;
+    border: 1px solid;
+    border-color: #1D2D48;
+    border-radius: 3px;
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    min-width: 62px;
+    padding: 9px 15px;
+}
+
+.ipModuleForm .ipmControlSubmit:hover {
+    background: #29426C;
+    border-color: #29426C;
+}
+
+.ipModuleForm .ipmControlSubmit:active {
+    background: #314E80;
+    border-color: #1D2D48;
+}
+
+.ipModuleForm .ipmControlError {
+    border-color: #da0001;
+}
+
+.ipModuleForm .ipmFileContainer .ipmHiddenInput {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.ipModuleForm .ipmFileContainer .ipmHiddenInput input {
+    margin: 0;
+    padding: 0;
+}
+
+.ipModuleForm .ipmFileContainer .ipmFileProgress {
+    border: 1px solid #333;
+    height: 3px;
+}
+
+.ipModuleForm .ipmFileContainer .ipmFile {
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.ipModuleForm .ipmFileContainer .ipmFileProgressValue {
+    background-color: #ccc;
+    height: 3px;
+}
+
+.ipModuleForm .ipmFileContainer .ipmRemove {
+    cursor: pointer;
+    background: url(../images/file_remove.png) no-repeat;
+    float: right;
+    height: 13px;
+    width: 13px;
+}
+
+.ipModuleForm .ipmFileContainer .ipmUploadError {
+    color: #da0001;
+    font-size: 11px;
+}
+
+.ipmErrorMessage {
+    background-color: #C00;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 10px 2px;
+}
+
+.mceContentBody, .ipmControlTextarea,  .ipmControlInput {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.mceContentBody p, .mceContentBody ul, .mceContentBody ol, .mceContentBody li, .mceContentBody dl, .mceContentBody dd, .mceContentBody dt {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mceContentBody a {
+    text-decoration: none;
+}
+
+.mceContentBody h1, .mceContentBody h2, .mceContentBody h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mceContentBody h1 {
+    color: #000;
+    font-size: 36px;
+}
+
+.mceContentBody h2 {
+    color: #0d0d0d;
+    font-size: 28px;
+}
+
+.mceContentBody h3 {
+    color: #1a1a1a;
+    font-size: 22px;
+}
+
+.mceContentBody ul {
+    list-style-position: inside;
+    list-style-type: square;
+    margin: 0 0 20px 15px;
+}
+
+.mceContentBody ol {
+    list-style-position: inside;
+    margin: 0 0 20px 15px;
+}
+
+.mceContentBody p {
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.mceContentBody ul ul, .mceContentBody ol ol {
+    margin-bottom: 0;
+}
+
+.mceContentBody li {
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.mceContentBody p+ul, .mceContentBody p+ol {
+    margin-top: -20px;
+}
+
+.mceContentBody a {
+    color: #019bd4;
+}
+
+.mceContentBody a:hover {
+    text-decoration: underline;
+}
+
+.mceContentBody .caption {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.mceContentBody .signature {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.mceContentBody .note {
+    color: #333;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    margin: 0 30px 25px;
+}
+
+.mceContentBody table {
+    font-size: 11px;
+}
+
+.mceContentBody td {
+    font-size: 11px;
+}
+
+.mceContentBody th, .mceContentBody thead td, .mceContentBody tbody tr:first-child td {
+    background-color: #000;
+    border: none;
+    color: #fff;
+}
+
+.ipWidget-IpFaq .ipwQuestion {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ipWidget-IpFaq .ipwQuestion:before {
+    border: 1px solid #000;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    content: '?';
+    display: block;
+    margin: 3px 0 0 -30px;
+    padding: 1px 2px;
+    position: absolute;
+}
+
+.ipWidget-IpFaq .ipwQuestion .ipwAnswer {
+    margin-top: 5px;
+}
+
+.ipWidget-IpFaq .ipwQuestion .ipwCollapsed .ipwAnswer {
+    display: none;
+}
+
+.ipWidget-IpFaq .ipwExpanded .ipwQuestion:before {
+    background-color: #000;
+    color: #fff;
+}
+
+.ipWidget-IpFile ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.ipWidget-IpFile li {
+    background: url(../images/icon_download.gif) no-repeat left center;
+    margin-bottom: 4px;
+    padding-left: 25px;
+}
+
+.ipWidget-IpFile a {
+    color: #019bd4;
+    font-weight: bold;
+}
+
+.ipWidget-IpFile a:hover {
+    text-decoration: underline;
+}
+
+.ipWidget-IpForm .ipwSuccess {
+    border: 1px solid #888;
+    display: none;
+    padding: 20px 25px;
+}
+
+.ipWidget-IpHtml {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.ipWidget-IpImage img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.ipWidget-IpRichText pre {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.ipWidget-IpSeparator.ipLayout-default {
+    border-bottom: 1px dotted #000;
+    height: 0;
+    overflow: hidden;
+}
+
+.ipWidget-IpSeparator.ipLayout-space {
+    height: 25px;
+}
+
+.ipWidget-IpTable {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.ipWidget-IpTextImage .ipwImage {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 100%;
+}
+
+.ipWidget-IpTextImage.ipLayout-right .ipwImage {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.ipBlock .ipExampleContent {
+    background: rgba(64, 64, 64, 0.7);
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+
+.ipWidget-IpImageGallery ul {
+    list-style: none;
+    margin: 0 -10px;
+}
+
+
+.ipWidget-IpLogoGallery ul {
+    list-style: none;
+    margin: 0 -10px;
+}
