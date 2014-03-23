@@ -14,48 +14,48 @@
 <?php
 /* TURN OFF HEADER IN MANAGEMENT STATE */
 if (!$site->managementState()) {
-/* EOF TURN OFF HEADER IN MANAGEMENT STATE */
-?>
-<!-- START HEAD -->
-<header class="scrollingTheme">
-    <div class="wrapper">
-        <nav class="clearfix">
-            <div class="navContainer">
-                <?php
+    /* EOF TURN OFF HEADER IN MANAGEMENT STATE */
+    ?>
+    <!-- START HEAD -->
+    <header class="scrollingTheme">
+        <div class="wrapper">
+            <nav class="clearfix">
+                <div class="navContainer">
+                    <?php
 
-                /* STANDARD MENU */
-                echo $this->generateMenu('Menu', 'menu1');
-                /* EOF STANDARD MENU */
+                    /* STANDARD MENU */
+                    echo $this->generateMenu('Menu', 'menu1');
+                    /* EOF STANDARD MENU */
 
-                /* GENERATE MENU */
-//                                        echo '<ul id="nav">';
-//
-//                                        echo '<li><a href="#home">Home</a></li>';
-//                                        $pages = $site->getZone('menu1')->getElements();
-//                                        foreach ($pages as $pageKey => $page) {
-//                                            echo '<li><a href="#page_' . $page->getId() . '">' . $page->getButtonTitle() . '</a></li>';
-//
-//                                        }
-//                                        echo '</ul>';
-                /* EOF GENERATE MENU */
+                    /* GENERATE MENU */
+                    //                                        echo '<ul id="nav">';
+                    //
+                    //                                        echo '<li><a href="#home">Home</a></li>';
+                    //                                        $pages = $site->getZone('menu1')->getElements();
+                    //                                        foreach ($pages as $pageKey => $page) {
+                    //                                            echo '<li><a href="#page_' . $page->getId() . '">' . $page->getButtonTitle() . '</a></li>';
+                    //
+                    //                                        }
+                    //                                        echo '</ul>';
+                    /* EOF GENERATE MENU */
 
-                ?>
-            </div>
-            <div class="navIcons">
-                <a href="http://www.facebook.com"><img
-                        src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_fb.png" alt=""></a>
-                <a href="https://plus.google.com/‎"><img
-                        src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_google.png" alt=""></a>
-                <a href="http://www.pinterest.com/"><img
-                        src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_pinterest.png " alt=""></a>
-                <a href="https://www.twitter.com/"><img
-                        src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_tweet.png" alt=""></a>
-            </div>
-        </nav>
-    </div>
-</header>
-<?php
-/* TURN OFF HEADER IN MANAGEMENT STATE */
+                    ?>
+                </div>
+                <div class="navIcons">
+                    <a href="http://www.facebook.com"><img
+                            src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_fb.png" alt=""></a>
+                    <a href="https://plus.google.com/‎"><img
+                            src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_google.png" alt=""></a>
+                    <a href="http://www.pinterest.com/"><img
+                            src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_pinterest.png " alt=""></a>
+                    <a href="https://www.twitter.com/"><img
+                            src="<?php echo BASE_URL . THEME_DIR . THEME; ?>/images/soc_tweet.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <?php
+    /* TURN OFF HEADER IN MANAGEMENT STATE */
 }
 /* EOF TURN OFF HEADER IN MANAGEMENT STATE */
 ?>
@@ -68,20 +68,21 @@ if (!$site->managementState()) {
         </div>
         <?php
         /* SHOW STATIC HTML HOMEPAGE */
-//                if (!$site->managementState()) {
-//
-//        ?>
-<!--                    <section class="homepage" id="home">-->
-<!--                        <div>-->
-<!--                            <h2>ImpressPages onepage theme</h2>-->
-<!---->
-<!--                            <h1>Project name</h1>-->
-<!--                        </div>-->
-<!--                        <div class="startButton"><a href="#click">Start</a></div>-->
-<!--                    </section>-->
-<!---->
-<!--        --><?php
-//                }
+        //                if (!$site->managementState()) {
+        //
+        //
+        ?>
+        <!--                    <section class="homepage" id="home">-->
+        <!--                        <div>-->
+        <!--                            <h2>ImpressPages onepage theme</h2>-->
+        <!---->
+        <!--                            <h1>Project name</h1>-->
+        <!--                        </div>-->
+        <!--                        <div class="startButton"><a href="#click">Start</a></div>-->
+        <!--                    </section>-->
+        <!---->
+        <!--        --><?php
+        //                }
         /* EOF SHOW STATIC HTML HOMEPAGE */
 
         /* STANDARD BLOCK OUTPUT */
@@ -90,28 +91,28 @@ if (!$site->managementState()) {
 
         /* SHOW ALL PAGES IN ONE */
 
-//                if ($site->managementState() || $site->getCurrentZone()->getName() != 'menu1') {
-//                    echo $site->generateBlock('main');
-//                } else {
-//                    $pages = $site->getZone('menu1')->getElements();
-//                    foreach ($pages as $pageKey => $page) {
-//                        echo '<div class="scrollblock">';
-//                        echo '<div id="page_' . $page->getId() . '">';
-//
-//                        $publishedRevision = \Ip\Revision::getPublishedRevision('menu1', $page->getId());
-//
-//                        echo \Modules\standard\content_management\Model::generateBlock(
-//                            'main',
-//                            $publishedRevision['revisionId'],
-//                            $site->managementState()
-//                        );
-//
-//                        echo '</div>';
-//
-//                        echo '</div>';
-//
-//                    }
-//                }
+        //                if ($site->managementState() || $site->getCurrentZone()->getName() != 'menu1') {
+        //                    echo $site->generateBlock('main');
+        //                } else {
+        //                    $pages = $site->getZone('menu1')->getElements();
+        //                    foreach ($pages as $pageKey => $page) {
+        //                        echo '<div class="scrollblock">';
+        //                        echo '<div id="page_' . $page->getId() . '">';
+        //
+        //                        $publishedRevision = \Ip\Revision::getPublishedRevision('menu1', $page->getId());
+        //
+        //                        echo \Modules\standard\content_management\Model::generateBlock(
+        //                            'main',
+        //                            $publishedRevision['revisionId'],
+        //                            $site->managementState()
+        //                        );
+        //
+        //                        echo '</div>';
+        //
+        //                        echo '</div>';
+        //
+        //                    }
+        //                }
         /* EOF SHOW ALL PAGES IN ONE */
 
         ?>
