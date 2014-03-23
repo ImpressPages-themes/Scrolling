@@ -3,8 +3,7 @@
 <head>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
     <?php
-    ipAddCss('assets/ipContent.css');
-    ipAddCss('assets/style.css');
+    ipAddCss('assets/theme.css');
     echo ipHead();
     ?>
 </head>
@@ -41,24 +40,18 @@
 
     <footer>
         <div class="navIcons">
-            <p><?php _e('Socialize with us', 'Scrolling') ?></p>
+            <p><?php _e('Social icons', 'Scrolling') ?></p>
             <a href="http://www.facebook.com"><img src="<?php echo ipThemeUrl('assets/images/soc_fb.png') ?>"alt=""></a>
             <a href="https://plus.google.com/‎"><img src="<?php echo ipThemeUrl('assets/images/soc_google.png') ?>" alt=""></a>
             <a href="http://www.pinterest.com/"><img src="<?php echo ipThemeUrl('assets/images/soc_pinterest.png') ?>" alt=""></a>
             <a href="https://www.twitter.com/"><img src="<?php echo ipThemeUrl('assets/images/soc_tweet.png') ?>" alt=""></a>
         </div>
         <div class="copyright">
-            Copyright ImpressPages. OnePage theme. 2013
+            ImpressPages theam
         </div>
     </footer>
 
 </div>
-
-<?php
-ipAddJs('assets/js/jquery.nav.js');
-ipAddJs('assets/js/jquery.scrollTo.js');
-ipAddJs('assets/js/theme.js');
-echo ipJs();
-?>
+<?php echo ipJs(); ?>
 </body>
 </html>

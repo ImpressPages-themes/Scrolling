@@ -27,6 +27,10 @@ header.scrollingTheme {
     z-index: 100;
 }
 
+body.ipHasAdminNavbar header.scrollingTheme {
+  top: 40px;
+}
+
 body.ipHasAdminPanel header.scrollingTheme {
     top: 148px;
 }
@@ -79,7 +83,7 @@ footer {
 }
 
 .spacer {
-    height: 46px;
+    height: 100px;
     margin: 0;
 }
 
