@@ -24,7 +24,11 @@ header.scrollingTheme {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 100;
+}
+
+body.ipHasAdminPanel header.scrollingTheme {
+    top: 148px;
 }
 
 header .wrapper {
@@ -53,7 +57,7 @@ footer {
 }
 
 .homepage {
-    background-image: url('../images/flamingos.jpg');
+    background-image: url('images/flamingos.jpg');
     background-position: top;
     background-repeat: no-repeat;
     border-bottom: 1px solid white;
